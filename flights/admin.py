@@ -6,7 +6,7 @@ class flight_admin(ModelAdmin):
 
 @register(Airport)
 class Airport_admin(ModelAdmin):
-    list_display=("Name","No")
+    list_display=("Name","No","City")
     search_fields=["Name"]
     list_filter=["Name","City"]
 
